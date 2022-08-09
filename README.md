@@ -12,6 +12,37 @@ pip install git+https://github.com/KeironO/umlsmap2rdf --no-cache-dir
 
 ## Usage
 
+umlsmap2rdf has a really simple CLI. After installation type `umlsmap2rdf --help` to for help:
+
+```
+$ umlsmap2rdf --help
+Usage: umlsmap2rdf [OPTIONS]
+
+  --    _   _ __  __ _     ____    __  __    _    ____  ____ ___ _   _  ____
+  --   | | | |  \/  | |   / ___|  |  \/  |  / \  |  _ \|  _ \_ _| \ | |/ ___|
+  --   | | | | |\/| | |   \___ \  | |\/| | / _ \ | |_) | |_) | ||  \| | |  _
+  --   | |_| | |  | | |___ ___) | | |  | |/ ___ \|  __/|  __/| || |\  | |_| |
+  --    \___/|_|  |_|_____|____/  |_|  |_/_/   \_\_|   |_|  |___|_| \_|\____|
+  --
+
+  This python scripts collates the Unified Medical Language System (UMLS) maps
+  into RDF/OWL files.
+
+  If you have any issues, feel free to submit a bug report at:
+  https://github.com/KeironO/umlsmap2rdf
+
+      Thanks!
+
+Options:
+  --input_fp TEXT   The File Path of MRCONSO.RRF  [required]
+  --output_fp TEXT  Number of greetings.  [required]
+  --help            Show this message and exit.
+```
+
+### Example Usage
+
+To convert mapping from `MRCONSO.RRF` file to RDF, simply type:
+
 ```
 umlsmap2rdf --input_fp /path/to/MRCONSO.RRF --output_fp /path/to/output.xml
 ```
@@ -61,3 +92,10 @@ DRUGBANK = "http://www.drugbank.ca/drugs/"
 HPO = "http://purl.bioontology.org/ontology/HPO/"
 NCI_NCI_GLOSS = "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/"
 ```
+
+## Bug reporting and feature suggestions
+
+Please report all bugs or feature suggestions to the [issues tracker](https://www.github.com/KeironO/umlsmap2rdf/issues). Please do not email me directly as I'm struggling to keep track of what needs to be fixed.
+
+## License
+Code is proudly released under the terms of the [MIT License](https://raw.githubusercontent.com/KeironO/umlsmap2rdf/main/LICENSE).
