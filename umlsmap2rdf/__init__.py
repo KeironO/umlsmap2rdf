@@ -1,6 +1,6 @@
 
 import click
-from mrconsordf import MRCCONSORDF
+from . import mrconsordf
 
 @click.command()
 @click.option('--input_fp', help='The File Path of MRCONSO.RRF', required=True)
@@ -21,7 +21,7 @@ If you have any issues, feel free to submit a bug report at: https://github.com/
 
     Thanks!    
     """
-    conv = MRCCONSORDF(input_fp, output_fp)
+    conv = mrconsordf.MRCCONSORDF(input_fp, output_fp)
     conv.do()
     
 

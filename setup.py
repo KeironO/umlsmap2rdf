@@ -2,12 +2,15 @@
 # -*- coding: utf-8 -*-
 
 from setuptools import setup, find_packages
-
 from os import path
 
 this_directory = path.abspath(path.dirname(__file__))
 with open(path.join(this_directory, "README.md")) as f:
     long_description = f.read()
+
+
+with open(path.join(this_directory, "requirements.txt")) as f:
+    requirements = [x for x in f.readlines()]
 
 setup(
     name="umlsmap2rdf",
@@ -20,4 +23,9 @@ setup(
     author_email="keiron.oshea@wales.nhs.uk",
     packages=find_packages(),
     include_package_data=True,
+    entry_points="""
+        [console_scripts]
+        umlsmap2rdf=umlsmap2rdf:cli
+    """,
+    install_requires = requirements
 )

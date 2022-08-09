@@ -1,6 +1,6 @@
 from rdflib import Graph, URIRef
 from rdflib.term import Literal
-import prefix
+from . import prefix
 from tqdm import tqdm
 import os
 
