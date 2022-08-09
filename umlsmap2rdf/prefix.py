@@ -1,5 +1,5 @@
 MESH = "http://purl.bioontology.org/ontology/MESH/"
-SNOMED = "http://bioportal.bioontology.org/ontologies/SNOMEDCT/"
+SNOMED = "http://purl.bioontology.org/ontology/SNOMEDCT/"
 RDFS = "http://www.w3.org/2000/01/rdf-schema#"
 OWL = "http://www.w3.org/2002/07/owl#"
 RDFS = "http://www.w3.org/2000/01/rdf-schema#"
