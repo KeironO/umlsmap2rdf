@@ -32,6 +32,7 @@ class MRCCONSORDF:
         graph.add((URIRef(prefix.UMLS), URIRef(prefix.RDFS+"comment"), Literal("RDF Version of  UMLS mapping; converted with the UMLSMAPS2RDF tool (https://github.com/KeironO/umlsmap2rdf).")))
         graph.add((URIRef(prefix.UMLS), URIRef(prefix.RDFS+"label"), Literal("UMLS")))
         graph.add((URIRef(prefix.UMLS), URIRef(prefix.OWL+"versionInfo"), Literal("2022AA")))
+        
         file_size = round(os.path.getsize(self.fp)/float(1<<20),3)
         with tqdm(total=100) as pbar:
             with open(self.fp, "r") as infile:
