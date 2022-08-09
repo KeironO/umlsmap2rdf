@@ -75,6 +75,8 @@ class MRCCONSORDF:
             format = 'json-ld'
         elif self.out_fp.endswith("ttl"):
             format = "turtle"
+        else:
+            raise Exception("Filetype has to be one of xml,rdf,json,json-ld,ttl")
 
         graph.serialize(self.out_fp, format=format)
 
