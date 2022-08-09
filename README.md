@@ -1,5 +1,12 @@
 # umlsmap2rdf
 
+[![GitHub commits](https://badgen.net/github/commits/KeironO/umlsmap2rdf/main)](https://GitHub.com/KeironO/umlsmap2rdf/main/commit/)
+![GitHub issues](https://img.shields.io/github/issues/KeironO/umlsmap2rdf)
+![GitHub repo size](https://img.shields.io/github/repo-size/KeironO/umlsmap2rdf)
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
+
 These python scripts take the Unified Medical Language System (UMLS) `MRCONSO.RRF` file and translates them into into RDF/OWL files for mapping.
 
 ## Installation
