@@ -57,7 +57,11 @@ class MRCCONSORDF:
                     try:
                         if content[6] == "Y" and content[2] == "P":
                             source_uri = getattr(prefix, source)
-                            graph.add((URIRef(prefix.UMLS+cui), URIRef(prefix.OWL+'sameAs'), URIRef(source_uri+content[13])))
+                            
+                            source_triple = (URIRef(prefix.UMLS+cui), URIRef(prefix.OWL+'sameAs'), URIRef(source_uri+content[13]))
+
+                            if source_triple not in graph:
+                                graph.add(source_triple)
 
                     except AttributeError:
                         pass
