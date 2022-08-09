@@ -68,7 +68,7 @@ Which will give you the following output:
     <RDF:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <OWL:sameAs rdf:resource="http://purl.bioontology.org/ontology/MESH/D015112"/>
     <OWL:sameAs rdf:resource="https://www.cancer.gov/publications/dictionaries/cancer-terms/def/CDR0000367450"/>
-    <OWL:sameAs rdf:resource="https://bioportal.bioontology.org/ontologies/NCI/C194"/>
+    <OWL:sameAs rdf:resource="https://purl.bioontology.org/ontology/NCI/C194"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://identifiers.org/umls:C0000246">
     <RDF:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -78,26 +78,26 @@ Which will give you the following output:
 ## Currently supported mappings
 
 ```
-MESH = "http://purl.bioontology.org/ontology/MESH/"
-SNOMED = "http://bioportal.bioontology.org/ontologies/SNOMEDCT/"
-RDFS = "http://www.w3.org/2000/01/rdf-schema#"
-OWL = "http://www.w3.org/2002/07/owl#"
-RDFS = "http://www.w3.org/2000/01/rdf-schema#"
-UMLS = "https://identifiers.org/umls:"
-UMLS_STY = "http://purl.bioontology.org/ontology/STY/"
-ICD10CM = "http://purl.bioontology.org/ontology/ICD10CM/"
-RDF = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-ICD9CM = "https://bioportal.bioontology.org/ontologies/ICD9CM/"
-ICD10 = "https://identifiers.org/icd10:"
-SKOS = "http://www.w3.org/2004/02/skos/core#"
-RXNORM = "http://purl.bioontology.org/ontology/RXNORM/"
-NCBI = "http://purl.bioontology.org/ontology/NCBITAXON/"
-GO = "http://purl.obolibrary.org/obo/GO_"
-WHO = "http://purl.bioontology.org/ontology/WHO-ART/"
-NCI = "https://bioportal.bioontology.org/ontologies/NCI/"
-DRUGBANK = "http://www.drugbank.ca/drugs/"
-HPO = "http://purl.bioontology.org/ontology/HPO/"
+DRUGBANK      = "http://purl.bioontology.org/ontology/DRUGBANK/"
+GO            = "http://purl.obolibrary.org/obo/GO_"
+HPO           = "http://purl.bioontology.org/ontology/HPO/"
+ICD10         = "https://identifiers.org/icd10:"
+ICD10CM       = "http://purl.bioontology.org/ontology/ICD10CM/"
+ICD9CM        = "http://purl.bioontology.org/ontology/ICD9CM/"
+MESH          = "http://purl.bioontology.org/ontology/MESH/"
+NCBI          = "http://purl.bioontology.org/ontology/NCBITAXON/"
+NCI           = "http://purl.bioontology.org/ontology/NCI/"
 NCI_NCI_GLOSS = "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/"
+OWL           = "http://www.w3.org/2002/07/owl#"
+RDF           = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+RDFS          = "http://www.w3.org/2000/01/rdf-schema#"
+RDFS          = "http://www.w3.org/2000/01/rdf-schema#"
+RXNORM        = "http://purl.bioontology.org/ontology/RXNORM/"
+SKOS          = "http://www.w3.org/2004/02/skos/core#"
+SNOMED        = "http://purl.bioontology.org/ontology/SNOMEDCT/"
+UMLS          = "https://identifiers.org/umls:"
+UMLS_STY      = "http://purl.bioontology.org/ontology/STY/"
+WHO           = "http://purl.bioontology.org/ontology/WHO-ART/"
 ```
 
 ## Bug reporting and feature suggestions
